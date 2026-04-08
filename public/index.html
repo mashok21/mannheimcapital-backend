@@ -10,14 +10,15 @@
 
     :root {
       --navy: #0d1b2e;
+      --navy-light: #12243d;
       --gold: #b8955a;
-      --offwhite: #f5f3ef;
-      --muted: #888;
+      --ivory: #f0ece4;
+      --muted: #7a8a9a;
     }
 
     body {
-      background: var(--offwhite);
-      color: var(--navy);
+      background: var(--navy);
+      color: var(--ivory);
       font-family: 'Cormorant Garamond', serif;
       min-height: 100vh;
       display: flex;
@@ -39,7 +40,7 @@
       text-align: center;
     }
 
-    /* Logo as hero */
+    /* Logo blends into navy background */
     .logo-hero {
       width: min(280px, 60vw);
       height: auto;
@@ -67,7 +68,7 @@
       font-size: clamp(2rem, 4.5vw, 3.2rem);
       font-weight: 300;
       line-height: 1.2;
-      color: var(--navy);
+      color: var(--ivory);
       letter-spacing: 0.01em;
       opacity: 0;
       animation: riseIn 1s ease 1s forwards;
@@ -85,7 +86,7 @@
       font-size: 1.1rem;
       font-weight: 300;
       line-height: 1.9;
-      color: #4a4a4a;
+      color: rgba(240, 236, 228, 0.65);
       opacity: 0;
       animation: riseIn 1s ease 1.2s forwards;
     }
@@ -115,7 +116,7 @@
     .team-name {
       font-size: 1.25rem;
       font-weight: 400;
-      color: var(--navy);
+      color: var(--ivory);
       letter-spacing: 0.05em;
     }
 
@@ -144,7 +145,7 @@
     /* ── FOOTER ── */
     footer {
       padding: 2rem 2rem 2.5rem;
-      border-top: 1px solid rgba(0,0,0,0.08);
+      border-top: 1px solid rgba(255,255,255,0.07);
       text-align: center;
     }
 
@@ -152,9 +153,9 @@
       font-family: 'Helvetica Neue', Helvetica, sans-serif;
       font-weight: 300;
       font-size: 13px;
-      color: var(--navy);
+      color: rgba(240, 236, 228, 0.6);
       line-height: 1.9;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.04em;
     }
 
     .footer-contact {
@@ -180,11 +181,11 @@
     .footer-disclaimer {
       margin-top: 1.2rem;
       padding-top: 1rem;
-      border-top: 1px solid rgba(0,0,0,0.06);
+      border-top: 1px solid rgba(255,255,255,0.05);
       font-family: 'Helvetica Neue', Helvetica, sans-serif;
       font-weight: 300;
       font-size: 12px;
-      color: var(--muted);
+      color: rgba(240, 236, 228, 0.3);
       letter-spacing: 0.03em;
       line-height: 1.7;
     }
