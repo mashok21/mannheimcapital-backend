@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Investment Philosophy — Mannheim Capital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0d1b2e;
+      --gold: #b8955a;
+      --ivory: #f0ece4;
+      --muted: #8a9aaa;
+      --card-bg: #0e0e0e;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--navy);
+      font-family: 'Cormorant Garamond', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 2rem;
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
+      min-height: 100%;
+    }
+
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    /* ── Card ── */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid rgba(184, 149, 90, 0.65);
+      box-shadow:
+        0 12px 48px rgba(0, 0, 0, 0.75),
+        0 3px 12px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(184, 149, 90, 0.06);
+      width: 100%;
+      max-width: 560px;
+      padding: 3.2rem 3.6rem 2.8rem;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      animation: riseIn 1s ease 0.3s forwards;
+    }
+
+    @keyframes riseIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Card top label ── */
+    .card-label {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .card-label span,
+    .card-label a {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .card-label a:hover { color: var(--gold); }
+
+    .card-label-dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: rgba(184, 149, 90, 0.5);
+      flex-shrink: 0;
+    }
+
+    /* ── Heading ── */
+    .card-heading {
+      font-size: clamp(1.7rem, 3.8vw, 2.3rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.18;
+      color: var(--ivory);
+      letter-spacing: 0.01em;
+    }
+
+    /* ── Rule ── */
+    .card-rule {
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+      margin: 1.8rem 0;
+      opacity: 0.8;
+    }
+
+    /* ── Body ── */
+    .card-body {
+      font-size: 0.98rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: rgba(240, 236, 228, 0.7);
+      flex: 1;
+    }
+
+    .card-body p + p {
+      margin-top: 1.3rem;
+    }
+
+    /* ── Card footer ── */
+    .card-footer {
+      margin-top: 2.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+    }
+
+    .card-footer-tagline {
+      font-size: 0.78rem;
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(184, 149, 90, 0.75);
+      letter-spacing: 0.04em;
+    }
+
+    .card-footer-domain {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      color: rgba(138, 154, 170, 0.55);
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 0.2s;
+    }
+
+    .card-footer-domain:hover {
+      color: var(--gold);
+    }
+
+    @media (max-width: 560px) {
+      body { padding: 1.5rem 1rem; }
+      .card { padding: 2.2rem 1.8rem 2rem; }
+      .card-footer { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <div class="card-label">
+      <a href="/">Mannheim Capital</a>
+      <div class="card-label-dot"></div>
+      <span>Investment Philosophy</span>
+    </div>
+
+    <h1 class="card-heading">Markets are VUCA.<br>Portfolios need not be.</h1>
+
+    <div class="card-rule"></div>
+
+    <div class="card-body">
+      <p>
+        We operate from a simple realism: uncertainty is permanent, not
+        episodic. Volatility, complexity, and ambiguity are not risks to be
+        modelled away. They are the conditions within which capital must
+        function.
+      </p>
+      <p>
+        We build positions that are uncertainty-aware from the outset. Not
+        constructed around forecasts or theoretical models, but around
+        durability. Portfolios designed so that returns are earned steadily, across
+        conditions, not extracted from a single favourable moment.
+      </p>
+      <p>
+        Clients come to us wanting to feel reassured. That reassurance is not a
+        sentiment we manufacture. It is the natural result of a calm, considered
+        approach to every allocation decision.
+      </p>
+    </div>
+
+    <footer class="card-footer">
+      <span class="card-footer-tagline">Structured &middot; Enduring &middot; Measured</span>
+      <a class="card-footer-domain" href="/">mannheimcapital.com</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
