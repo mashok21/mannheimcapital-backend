@@ -12,8 +12,8 @@
       --navy: #0d1b2e;
       --gold: #b8955a;
       --ivory: #f0ece4;
-      --muted: #8a9aaa;
-      --card-bg: #0e0e0e;
+      --muted: #7a8a9a;
+      --card-bg: #070f1c;
     }
 
     body {
@@ -32,7 +32,7 @@
 
     /* ── Card ── */
     .card {
-      background: #0d0b08;
+      background: var(--card-bg);
       border: 2px solid rgba(184, 149, 90, 0.8);
       outline: 1px solid rgba(184, 149, 90, 0.18);
       outline-offset: 7px;
@@ -78,7 +78,7 @@
         var(--navy) 42%,
         rgba(184, 149, 90, 0.45) 43%,
         rgba(0, 0, 0, 0.12) 44.5%,
-        #0d0b08 50%
+        var(--card-bg) 50%
       );
       z-index: 10;
       pointer-events: none;
