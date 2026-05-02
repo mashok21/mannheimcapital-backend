@@ -133,6 +133,25 @@
 
     .about p + p { margin-top: 1rem; }
 
+    .page-nav {
+      margin-top: 2.8rem;
+      opacity: 0;
+      animation: riseIn 1s ease 1.3s forwards;
+    }
+
+    .page-nav a {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .page-nav a:hover { color: var(--gold); }
+
     .team {
       margin-top: 4rem;
       display: flex;
@@ -297,6 +316,10 @@
       <p>Our counsel is grounded in discipline, patience, and a long-term perspective. Not speculation.</p>
     </div>
 
+    <div class="page-nav">
+      <a href="/philosophy.html">Philosophy</a>
+    </div>
+
     <div class="team">
       <p class="team-label">Founder</p>
       <span class="team-name">Ashok M</span>
@@ -320,9 +343,6 @@
     <div class="footer-contact">
       <a href="tel:+919686358446">+91 96863 58446</a>
       <a href="#" id="email-link"></a>
-    </div>
-    <div class="footer-nav">
-      <a href="/philosophy.html">Philosophy</a>
     </div>
     <p class="footer-disclaimer">
       Mutual Fund investments are subject to market risks, read all scheme related documents carefully.
